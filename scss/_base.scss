@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
-// https://dummyimage.com/100x500&text=dummy_me
+
 
 // Generic Classes
 .c-blue {
@@ -24,28 +24,41 @@ body {
 .d-in {
   display: inline-block;
 }
+.f-bold {
+    font-weight: bold;
+}
 .f-r {
   float: right;
 }
 .f-l {
-  float: left;
+    float: left;
 }
 .w-5 {
-  width: 5%;
+    width: 5%;
 }
 .w-20 {
-  width: 20% !important;
+    width: 20% !important;
+}
+.w-30 {
+    width: 30%;
 }
 .w-40 {
-  width:40% !important;
+    width:40% !important;
 }
 .w-50 {
-  width: 50%;
+    width: 50%;
+}
+.w-80 {
+    width: 80%;
+}
+.w-100 {
+    width: 100%;
 }
 .wrap-div {
   width: 80%;
   margin: 0 auto;
 }
+
 .text-center {
   text-align: center;
 }
@@ -62,8 +75,14 @@ body {
   overflow: auto !important;
   height: auto !important;
 }
+.m-auto {
+    margin: 0 auto;
+}
 button {
   cursor: pointer
+}
+li {
+    list-style-type: none;
 }
 
 // Main Container
@@ -104,10 +123,6 @@ button {
     padding: 10px 0 10px 0;
   }
 
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
   .maxxton-hero-image {
     @include background-image-mixin('../images/maxxton-hero-image.jpg');
     padding: 200px;
@@ -126,13 +141,28 @@ button {
     color: $white;
     transition: .2s;
   }
-  // common class for border radius
+  // common class for border radius buttons
   .b-r-white {
     background-color: $white;
     padding: 10px;
     border-radius: 4px;
     text-align: center;
+    border: none;
+    &:hover {
+        -webkit-transition: background-color 2s ease-out;
+        -moz-transition: background-color 2s ease-out;
+        -o-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;
+    }
   }
+    .b-r-orange {
+        border: 1px solid $white;
+        background-color: $orange;
+        @extend .b-r-white;
+      }
+      .b-c-grey {
+        background-color: $gray;
+      }
   .change-context {
     background-color: $orange;
     color: $white;
@@ -142,8 +172,8 @@ button {
   }
   input::-webkit-input-placeholder {
   font-size: 10px;
-}
-  .search-button, .calendar-to, .calendar-from {
+  }
+  .search-button, .calendar-to, .calendar-from  {
     input{
       border-bottom-left-radius: 4px;
       border-top-left-radius: 4px;
@@ -162,7 +192,7 @@ button {
     background-color: $orange;
     color: $white;
   }
-  .calendar-from, .calendar-to {
+  .calendar-from, .calendar-to, .common-input {
     input{
     display: inline-block;
     position: relative;
@@ -193,12 +223,9 @@ button {
     padding-bottom: 20px;
   }
   .header-section-two {
-    position: absolute;
-    top: 250px;
-    left: 0;
     width: 80%;
     margin: 0 auto;
-    right: 0;
+    margin-top: -120px;
   }
 
   // section cards
@@ -250,6 +277,12 @@ button {
     color: $white;
     width: 70%;
     border: none;
+     &:hover {
+        -webkit-transition: background-color 2s ease-out;
+        -moz-transition: background-color 2s ease-out;
+        -o-transition: background-color 2s ease-out;
+        transition: background-color 2s ease-out;
+    }
   }
   .text-align-image {
     position: absolute;
@@ -325,4 +358,34 @@ button {
     position: fixed;
     box-shadow: 0 4px 4px #333;
     transition: color, background, transform .1s ease-in-out 0s;
+    }
+    .inside-image-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 200px;
+        padding: 20px;
+        background-color: $orange;
+        button {
+            background-color: transparent;
+            color: $white;
+
+        }
+    }
+    .section-four {
+        background-color: #EAEAEA;
+    }
+    .common-input {
+        input {
+            border: none !important;
+        }
+    }
+    .footer-bottom {
+        li {
+            padding: 5px;
+            color: #EAEAEA;
+        }
     }

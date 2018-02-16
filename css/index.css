@@ -511,7 +511,6 @@
   display: block; }
 
 /* End sub dropdown menu */
-/* Dark theme */
 .dark-nav {
   background-color: #2f3340; }
 
@@ -528,7 +527,6 @@
 .dark-nav .nav-heading .toggle-nav {
   color: #EEE; }
 
-/* End Dark theme */
 /* Start media query for navbar */
 @media (max-width: 767px) {
   .nav .container {
@@ -589,7 +587,6 @@
   .categories .drop-down .sub-dropdown:before {
     display: none; }
 
-  /* Simple reset for dark theme */
   .dark-nav .menu {
     background-color: #252831; }
 
@@ -620,6 +617,9 @@ body {
 .d-in {
   display: inline-block; }
 
+.f-bold {
+  font-weight: bold; }
+
 .f-r {
   float: right; }
 
@@ -632,11 +632,20 @@ body {
 .w-20 {
   width: 20% !important; }
 
+.w-30 {
+  width: 30%; }
+
 .w-40 {
   width: 40% !important; }
 
 .w-50 {
   width: 50%; }
+
+.w-80 {
+  width: 80%; }
+
+.w-100 {
+  width: 100%; }
 
 .wrap-div {
   width: 80%;
@@ -658,8 +667,14 @@ body {
   overflow: auto !important;
   height: auto !important; }
 
+.m-auto {
+  margin: 0 auto; }
+
 button {
   cursor: pointer; }
+
+li {
+  list-style-type: none; }
 
 .main-container .change-context {
   background: orange;
@@ -688,9 +703,6 @@ button {
   vertical-align: bottom; }
 .main-container .right-block {
   padding: 10px 0 10px 0; }
-.main-container .container {
-  width: 100%;
-  margin: 0 auto; }
 .main-container .maxxton-hero-image {
   background: transparent url(../images/maxxton-hero-image.jpg) no-repeat fixed;
   padding: 200px; }
@@ -705,11 +717,22 @@ button {
   border: none;
   color: #FFFFFF;
   transition: .2s; }
-.main-container .b-r-white {
+.main-container .b-r-white, .main-container .b-r-orange {
   background-color: #FFFFFF;
   padding: 10px;
   border-radius: 4px;
-  text-align: center; }
+  text-align: center;
+  border: none; }
+  .main-container .b-r-white:hover, .main-container .b-r-orange:hover {
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out; }
+.main-container .b-r-orange {
+  border: 1px solid #FFFFFF;
+  background-color: orange; }
+.main-container .b-c-grey {
+  background-color: gray; }
 .main-container .change-context {
   background-color: orange;
   color: #FFFFFF; }
@@ -730,7 +753,7 @@ button {
 .main-container .search-box {
   background-color: orange;
   color: #FFFFFF; }
-.main-container .calendar-from input, .main-container .calendar-to input {
+.main-container .calendar-from input, .main-container .calendar-to input, .main-container .common-input input {
   display: inline-block;
   position: relative;
   padding: .8em 1.4em;
@@ -754,12 +777,9 @@ button {
   border-bottom-color: #EAEAEA;
   padding-bottom: 20px; }
 .main-container .header-section-two {
-  position: absolute;
-  top: 250px;
-  left: 0;
   width: 80%;
   margin: 0 auto;
-  right: 0; }
+  margin-top: -120px; }
 .main-container .cards {
   display: flex;
   justify-content: space-between; }
@@ -797,6 +817,11 @@ button {
   color: #FFFFFF;
   width: 70%;
   border: none; }
+  .main-container .view-details:hover {
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out; }
 .main-container .text-align-image {
   position: absolute;
   top: 50px;
@@ -856,5 +881,29 @@ button {
   position: fixed;
   box-shadow: 0 4px 4px #333;
   transition: color, background, transform .1s ease-in-out 0s; }
+
+.inside-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 200px;
+  padding: 20px;
+  background-color: orange; }
+  .inside-image-container button {
+    background-color: transparent;
+    color: #FFFFFF; }
+
+.section-four {
+  background-color: #EAEAEA; }
+
+.common-input input {
+  border: none !important; }
+
+.footer-bottom li {
+  padding: 5px;
+  color: #EAEAEA; }
 
 /*# sourceMappingURL=index.css.map */
