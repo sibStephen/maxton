@@ -3,6 +3,24 @@
 $(document).ready(function() {
   // Carousel- custom to navigate and click accordingly
 
+  $(window).scroll(function() {
+    if($(window).scrollTop() > 0) {
+      $('.search-toggle').hide();
+      $('.search-nav').show();
+      $(".scroll-top").show();
+    } else {
+      $('.search-toggle.search-button').css('display', 'inline-block');
+      $('.search-nav').hide();
+      $(".scroll-top"),hide();
+    }
+  });
+
+  $(".scroll-top").on('click',function(){
+       $('html, body').animate({
+            scrollTop: $(".maxxton-hero-image").offset().top
+      }, 1000);
+    });
+
   $('#prv-image').on('click', function(){
     var $last = $('#images li:last');
     $last.remove().css({ 'margin-left': '-400px' });
