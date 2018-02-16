@@ -1,0 +1,66 @@
+
+/*Margin-padding*/
+
+
+@mixin background-image-mixin($imgpath, $position:fixed , $repeat: no-repeat) {
+    background: transparent url(#{$imgpath}) $repeat $position;
+}
+
+
+@mixin margin-padding($min, $max, $css-property, $klass, $csspx: $min) {
+  @while $min <= $max {
+    @if $min != 0 {
+      $csspx: $min+px;
+    }
+
+    .#{$klass}-#{$min} {
+      #{$css-property}: $csspx !important;
+    }
+
+    .#{$klass}-t-#{$min} {
+      #{$css-property}-top: $csspx !important;
+    }
+
+    .#{$klass}-b-#{$min} {
+      #{$css-property}-bottom: $csspx !important;
+    }
+
+    .#{$klass}-l-#{$min} {
+      #{$css-property}-left: $csspx !important;
+    }
+
+    .#{$klass}-r-#{$min} {
+      #{$css-property}-right: $csspx !important;
+    }
+
+    $min: $min + 5;
+  }
+}
+
+@include margin-padding(0, 50, margin, m);
+@include margin-padding(0, 50, padding, p);
+
+
+/* Background Image mixin */
+
+@mixin background-image-mixin($imgpath, $position:fixed , $repeat: no-repeat) {
+    background: transparent url(#{$imgpath}) $repeat $position;
+}
+
+/* fotn size mixin */
+@mixin font-size($min, $max, $css-property, $klass, $csspx: $min) {
+  @while $min <= $max {
+    @if $min != 0 {
+      $csspx: $min+px;
+    }
+
+    .#{$klass}-#{$min} {
+      #{$css-property}: $csspx !important;
+    }
+
+    $min: $min + 5;
+  }
+}
+
+@include font-size(0, 100, font-size, f);
+
