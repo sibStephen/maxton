@@ -11,7 +11,7 @@ $(document).ready(function() {
     } else {
       $('.search-toggle.search-button').css('display', 'inline-block');
       $('.search-nav').hide();
-      $(".scroll-top"),hide();
+      $(".scroll-top").hide();
     }
   });
 

@@ -877,7 +877,7 @@ li {
   margin-top: -15px;
   border-radius: 50%;
   position: absolute;
-  background: #FFFFFF;
+  background: #2f1709;
   position: fixed;
   box-shadow: 0 4px 4px #333;
   transition: color, background, transform .1s ease-in-out 0s; }
