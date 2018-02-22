@@ -59,8 +59,14 @@ body {
   margin: 0 auto;
 }
 
-.text-center {
-  text-align: center;
+.text-center
+{  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
 }
 .p-relative {
   position: relative;
@@ -84,6 +90,10 @@ button {
 li {
     list-style-type: none;
 }
+input {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
 
 // Main Container
 .main-container {
@@ -101,7 +111,7 @@ li {
       font-size: 20px;
     }
     #open-navbar1 {
-      width: 60%;
+      width: 70%;
       display: inline-block;
     }
   }
@@ -131,18 +141,17 @@ li {
   .hover-effect-stars {
     color: $orange;
     cursor: pointer;
-
   }
   .search {
     display: inline-block;
     position: relative;
-    padding: .8em 1.4em;
+    padding: 13px 5px 11px 14px;
     background: $orange;
     border: none;
     color: $white;
     transition: .2s;
   }
-  // common class for border radius buttons
+  // Common class for border radius buttons
   .b-r-white {
     background-color: $white;
     padding: 10px;
@@ -150,10 +159,10 @@ li {
     text-align: center;
     border: none;
     &:hover {
-        -webkit-transition: background-color 2s ease-out;
-        -moz-transition: background-color 2s ease-out;
-        -o-transition: background-color 2s ease-out;
-        transition: background-color 2s ease-out;
+      -webkit-transition: background-color 2s ease-out;
+      -moz-transition: background-color 2s ease-out;
+      -o-transition: background-color 2s ease-out;
+      transition: background-color 2s ease-out;
     }
   }
     .b-r-orange {
@@ -186,7 +195,7 @@ li {
     }
   }
   .search-box, .search-button, .calendar-to, .calendar-from {
-    padding: 8px 10px 12px 10px;
+    padding: 11px 10px 12px 10px;
     width: 17%;
   }
   .search-box {
@@ -197,7 +206,7 @@ li {
     input{
     display: inline-block;
     position: relative;
-    padding: .8em 1.4em;
+    padding: 13px 5px 11px 14px;
     border-style: solid;
     border-color: $black;
     transition: .2s;
@@ -207,7 +216,7 @@ li {
   }
   .calendar-one-box, .calendar-two-box {
     background-color: $white;
-    padding: 8px 10px 12px 10px;
+    padding: 11px 10px 12px 10px;
     border-style: solid;
     border-color: $black;
     border-width: 1px;
@@ -236,7 +245,6 @@ li {
   .flex-height {
     flex: 1;
     height: 300px;
-    margin: 10px;
 
     // Doing this because used images are of different sizes
     img {
@@ -317,7 +325,7 @@ li {
 
     #images {
         overflow: hidden;
-        padding: 10px;
+        padding: 0;
         width: 1600px;
     }
     #images > li {
@@ -343,10 +351,10 @@ li {
   .toggle {
     z-index: 5;
     left: -20px;
-    bottom: 0;
+    bottom: 20px;
     left: 45em;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 37px;
     color: #031b21;
     cursor: pointer;
     font-size: 28px;
@@ -368,7 +376,7 @@ li {
         width: 80%;
         margin: 0 auto;
         margin-top: 200px;
-        padding: 20px;
+        padding: 20px 0 20px 0;
         background-color: $orange;
         button {
             background-color: transparent;

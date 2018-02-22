@@ -164,6 +164,66 @@
 .m-r-50 {
   margin-right: 50px !important; }
 
+.m-55 {
+  margin: 55px !important; }
+
+.m-t-55 {
+  margin-top: 55px !important; }
+
+.m-b-55 {
+  margin-bottom: 55px !important; }
+
+.m-l-55 {
+  margin-left: 55px !important; }
+
+.m-r-55 {
+  margin-right: 55px !important; }
+
+.m-60 {
+  margin: 60px !important; }
+
+.m-t-60 {
+  margin-top: 60px !important; }
+
+.m-b-60 {
+  margin-bottom: 60px !important; }
+
+.m-l-60 {
+  margin-left: 60px !important; }
+
+.m-r-60 {
+  margin-right: 60px !important; }
+
+.m-65 {
+  margin: 65px !important; }
+
+.m-t-65 {
+  margin-top: 65px !important; }
+
+.m-b-65 {
+  margin-bottom: 65px !important; }
+
+.m-l-65 {
+  margin-left: 65px !important; }
+
+.m-r-65 {
+  margin-right: 65px !important; }
+
+.m-70 {
+  margin: 70px !important; }
+
+.m-t-70 {
+  margin-top: 70px !important; }
+
+.m-b-70 {
+  margin-bottom: 70px !important; }
+
+.m-l-70 {
+  margin-left: 70px !important; }
+
+.m-r-70 {
+  margin-right: 70px !important; }
+
 .p-0 {
   padding: 0 !important; }
 
@@ -328,6 +388,66 @@
 
 .p-r-50 {
   padding-right: 50px !important; }
+
+.p-55 {
+  padding: 55px !important; }
+
+.p-t-55 {
+  padding-top: 55px !important; }
+
+.p-b-55 {
+  padding-bottom: 55px !important; }
+
+.p-l-55 {
+  padding-left: 55px !important; }
+
+.p-r-55 {
+  padding-right: 55px !important; }
+
+.p-60 {
+  padding: 60px !important; }
+
+.p-t-60 {
+  padding-top: 60px !important; }
+
+.p-b-60 {
+  padding-bottom: 60px !important; }
+
+.p-l-60 {
+  padding-left: 60px !important; }
+
+.p-r-60 {
+  padding-right: 60px !important; }
+
+.p-65 {
+  padding: 65px !important; }
+
+.p-t-65 {
+  padding-top: 65px !important; }
+
+.p-b-65 {
+  padding-bottom: 65px !important; }
+
+.p-l-65 {
+  padding-left: 65px !important; }
+
+.p-r-65 {
+  padding-right: 65px !important; }
+
+.p-70 {
+  padding: 70px !important; }
+
+.p-t-70 {
+  padding-top: 70px !important; }
+
+.p-b-70 {
+  padding-bottom: 70px !important; }
+
+.p-l-70 {
+  padding-left: 70px !important; }
+
+.p-r-70 {
+  padding-right: 70px !important; }
 
 /* Background Image mixin */
 /* fotn size mixin */
@@ -654,6 +774,12 @@ body {
 .text-center {
   text-align: center; }
 
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
 .p-relative {
   position: relative; }
 
@@ -676,6 +802,10 @@ button {
 li {
   list-style-type: none; }
 
+input {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
 .main-container .change-context {
   background: orange;
   color: #FFFFFF; }
@@ -688,7 +818,7 @@ li {
   .main-container .nav .list {
     font-size: 20px; }
   .main-container .nav #open-navbar1 {
-    width: 60%;
+    width: 70%;
     display: inline-block; }
 .main-container .phone-number {
   background-color: #FFFFFF;
@@ -705,14 +835,15 @@ li {
   padding: 10px 0 10px 0; }
 .main-container .maxxton-hero-image {
   background: transparent url(../images/maxxton-hero-image.jpg) no-repeat fixed;
-  padding: 200px; }
+  padding: 200px;
+  background-size: cover; }
 .main-container .hover-effect-stars {
   color: orange;
   cursor: pointer; }
 .main-container .search {
   display: inline-block;
   position: relative;
-  padding: .8em 1.4em;
+  padding: 13px 5px 11px 14px;
   background: orange;
   border: none;
   color: #FFFFFF;
@@ -748,7 +879,7 @@ li {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px; }
 .main-container .search-box, .main-container .search-button, .main-container .calendar-to, .main-container .calendar-from {
-  padding: 8px 10px 12px 10px;
+  padding: 11px 10px 12px 10px;
   width: 17%; }
 .main-container .search-box {
   background-color: orange;
@@ -756,7 +887,7 @@ li {
 .main-container .calendar-from input, .main-container .calendar-to input, .main-container .common-input input {
   display: inline-block;
   position: relative;
-  padding: .8em 1.4em;
+  padding: 13px 5px 11px 14px;
   border-style: solid;
   border-color: #000000;
   transition: .2s;
@@ -764,7 +895,7 @@ li {
   width: 76%; }
 .main-container .calendar-one-box, .main-container .calendar-two-box {
   background-color: #FFFFFF;
-  padding: 8px 10px 12px 10px;
+  padding: 11px 10px 12px 10px;
   border-style: solid;
   border-color: #000000;
   border-width: 1px; }
@@ -785,8 +916,7 @@ li {
   justify-content: space-between; }
   .main-container .cards .flex-height {
     flex: 1;
-    height: 300px;
-    margin: 10px; }
+    height: 300px; }
     .main-container .cards .flex-height img {
       width: 100%;
       height: 240px; }
@@ -845,7 +975,7 @@ li {
   overflow: hidden; }
 .main-container #images {
   overflow: hidden;
-  padding: 10px;
+  padding: 0;
   width: 1600px; }
 .main-container #images > li {
   overflow: hidden;
@@ -865,10 +995,10 @@ li {
 .toggle {
   z-index: 5;
   left: -20px;
-  bottom: 0;
+  bottom: 20px;
   left: 45em;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 37px;
   color: #031b21;
   cursor: pointer;
   font-size: 28px;
@@ -890,7 +1020,7 @@ li {
   width: 80%;
   margin: 0 auto;
   margin-top: 200px;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   background-color: orange; }
   .inside-image-container button {
     background-color: transparent;
