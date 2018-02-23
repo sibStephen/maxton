@@ -128,8 +128,8 @@
 
 
 
-  /* Start media query for navbar */
-  @media (max-width: 767px) {
+  /* Starting media query for navbar */
+  @media (max-width: 1060px) {
     .nav .container {
       padding-right: 0;
       padding-left: 0;
@@ -144,7 +144,6 @@
 
     .nav .nav-heading .toggle-nav {
       display: block;
-      float: right;
       margin-top: 14px;
     }
 
@@ -191,4 +190,12 @@
     .dark-nav .nav-heading {border-bottom-color: #31343c}
     .dark-nav .list .drop-down > li > a {color: #AAA}
     .dark-nav .list .categories .drop-down .seprator {background-color: rgba(43, 43, 81, 0.98)}
+  }
+
+  .nav-heading {
+    padding-bottom: 5px;
+  }
+  .dark-nav.theme-nav {
+    width: 80% !important;
+    margin: 0 auto;
   }

@@ -1,17 +1,38 @@
 
 // Jquery
 $(document).ready(function() {
-  // Carousel- custom to navigate and click accordingly
 
+  // Navbar toogle
+  $(window).resize(function() {
+   call();
+  });
+  call();
+
+  $('.toggle-nav').click(function() {
+    $('#open-navbar1').toggle();
+  });
+
+
+  // Carousel- custom to navigate and click accordingly
   $(window).scroll(function() {
-    if($(window).scrollTop() > 0) {
+    if($(window).scrollTop() > 0 && $(window).width() > 1060) {
       // $('.search-toggle').hide();
       // $('.search-nav').show();
       $(".scroll-top").show();
+      $('.container-1').hide();
+      $('.container-2').hide();
+      $('.search-button-down').hide();
+      $('.dark-nav').addClass('theme-nav');
+      $('.container-3').show();
     } else {
       // $('.search-toggle.search-button').css('display', 'inline-block');
       // $('.search-nav').hide();
       $(".scroll-top").hide();
+      $('.container-1').show();
+      $('.container-2').show();
+      $('.search-button-down').show();
+      $('.dark-nav').removeClass('theme-nav');
+      $('.container-3').hide();
     }
   });
 
@@ -37,6 +58,11 @@ $(document).ready(function() {
   });
 });
 
+var call  = function() {
+    if ($(window).width() <= 1060) {
+      $('#open-navbar1').hide();
+    }
+}
 // Vanilla js
 document.onreadystatechange = function() {
     // Mouse hover effect
