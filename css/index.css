@@ -722,6 +722,20 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0; }
 
+.dark-nav {
+  box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.55);
+  animation-name: navbarAnimation;
+  animation-duration: 0.8s;
+  transition-duration: .6s;
+  transition-delay: .1s;
+  transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715); }
+
+@keyframes navbarAnimation {
+  from {
+    top: -10px;
+    background: transparent; }
+  to {
+    top: 10px; } }
 .c-blue {
   color: blue !important; }
 
@@ -902,7 +916,8 @@ input {
   border-style: solid;
   border-color: #000000;
   border-width: 1px; }
-.main-container .search {
+.main-container d
+.search {
   color: #FFFFFF;
   background-color: orange;
   width: 75%; }
@@ -931,13 +946,10 @@ input {
   .main-container .cards .tropea, .main-container .cards .brunswick, .main-container .cards .tropea-two {
     width: 35%; }
 .main-container .top-banner {
-  position: fixed;
   background-color: rgba(43, 43, 81, 0.98);
   left: 0;
   right: 0;
   top: 200px;
-  width: 80%;
-  margin: 0 auto;
   z-index: 100; }
 .main-container .featured-vacation {
   background-color: transparent; }
@@ -1002,7 +1014,7 @@ input {
   bottom: 20px;
   left: 45em;
   width: 42px;
-  height: 37px;
+  height: 42px;
   cursor: pointer;
   font-size: 28px;
   line-height: 40px;
@@ -1019,6 +1031,8 @@ input {
     color: #FFFFFF;
     background-color: orange;
     transition: color, background, transform .1s ease-in-out 0s; }
+  .toggle .zmdi {
+    padding-top: 4px; }
 
 .inside-image-container {
   position: absolute;
@@ -1043,5 +1057,71 @@ input {
 .footer-bottom li {
   padding: 5px;
   color: #EAEAEA; }
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+  .w-50 {
+    width: 100% !important; }
+
+  .w-30 {
+    width: 100% !important; }
+
+  .wrap-div {
+    padding: 20px 0 20px 0 !important;
+    text-align: center; }
+
+  .search-button, .calendar-to, .calendar-from {
+    width: 100% !important; }
+
+  .cards {
+    display: block !important; }
+    .cards .flex-height {
+      margin-bottom: 130px !important;
+      width: 100% !important;
+      padding: 0 !important; }
+      .cards .flex-height div[class*="section-"] {
+        height: 150px !important;
+        padding-bottom: 40px;
+        text-align: center; }
+        .cards .flex-height div[class*="section-"] .price {
+          font-size: 30px; }
+
+  .calendar-from input, .calendar-to input, .common-input input {
+    width: 80% !important; }
+
+  .search-button {
+    width: 100% !important; }
+    .search-button input {
+      width: 80% !important; }
+    .search-button span i {
+      text-align: center !important; }
+
+  .search-box {
+    width: 35% !important; }
+
+  .header-section-three .d-flex {
+    display: inline-block !important; }
+  .header-section-three img {
+    width: 100%; }
+  .header-section-three .read-more {
+    display: none; }
+
+  .inside-image-container {
+    text-align: center; }
+    .inside-image-container .common-input {
+      margin: 10px 0 10px 0;
+      float: left;
+      text-align: center; }
+      .inside-image-container .common-input input {
+        width: 80% !important;
+        border-radius: 4px !important; }
+    .inside-image-container button {
+      width: 80% !important;
+      margin: 0 auto; }
+
+  .section-four i[class*="zmdi-"] {
+    font-size: 30px; }
+
+  .footer-bottom {
+    text-align: center; } }
 
 /*# sourceMappingURL=index.css.map */

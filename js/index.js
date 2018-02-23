@@ -5,12 +5,12 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     if($(window).scrollTop() > 0) {
-      $('.search-toggle').hide();
-      $('.search-nav').show();
+      // $('.search-toggle').hide();
+      // $('.search-nav').show();
       $(".scroll-top").show();
     } else {
-      $('.search-toggle.search-button').css('display', 'inline-block');
-      $('.search-nav').hide();
+      // $('.search-toggle.search-button').css('display', 'inline-block');
+      // $('.search-nav').hide();
       $(".scroll-top").hide();
     }
   });
